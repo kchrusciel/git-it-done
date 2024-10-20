@@ -4,11 +4,11 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>GIT it done!</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/moon.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
@@ -16,8 +16,31 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h1 style="text-transform: none;">GIT it done!</h1>
+				</section>
+				<section>
+					<h1>Conventional Commits</h1>
+				</section>
+				<section>
+					<pre><code data-trim data-noescape><script type="text/template">
+						<type>[optional scope]: <description>
+
+						[optional body]
+							
+						[optional footer(s)]
+					</script></code></pre>
+					<pre><code data-trim data-noescape class="fragment"><script type="text/template">
+						refactor: rename abc method
+					</script></code></pre>
+					<pre><code data-trim data-noescape class="fragment"><script type="text/template">
+						refactor(invoicing): rename abc method
+
+						This method was renamed due to...
+
+						Reviewed-by: Krzysztof C
+					</script></code></pre>
+				</section>
 			</div>
 		</div>
 
